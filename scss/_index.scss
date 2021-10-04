@@ -1,0 +1,146 @@
+// primer bloque
+.home-info {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    max-height: 43.2rem;
+    overflow: hidden;
+
+    background-image: url('/media/background/FONDO\ CLARO.png');
+    background-position: center center;
+    background-size: cover;
+
+    .home-texto {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex: 1;
+
+        .home-texto__header {
+            text-align: center;
+
+            h2, p {
+                font-size: 4rem;
+                color: white;
+                text-shadow: $sombreado;
+            }
+
+            p {
+                font-size: 1.6rem;
+            }
+        }
+
+        .home-texto__lista {
+            li {
+                font-family: $fuenteTextos;
+                color: white;
+                font-size: 2.6rem;
+                text-shadow: $sombreado;
+                list-style: none;
+                position: relative;
+
+                &::before {
+                    content: '';
+                    width: 10px;
+                    height: 10px;
+                    background-color: white;
+                    box-shadow: 2px 2px 4px 0 rgba(0, 0, 0, 0.6);
+                    position: absolute;
+                    top: calc(50% - 5px);
+                    left: -20px;
+                    transform: rotateZ(45deg);
+                }
+            }
+        }
+    }
+
+    .home-info-img {
+        img {
+            &:first-of-type {
+                margin-right: -3px;
+            }
+            &:last-of-type {
+                margin-top: -2px;
+            }
+        }
+    }
+}
+
+// divisor - frase
+
+.frase {
+    text-align: center;
+    padding: 4rem 3rem;
+    background-image: url('../media/background/FONDO\ BLANCO.png');
+    background-position: center center;
+    background-size: cover;
+    position: relative;
+
+    &:before {
+        content: '';
+        position: absolute;
+        height: 1px;
+        width: 590px;
+        background-color: $violetaOscuro;
+        top: 16px;
+        left: calc(50% - 295px);
+    }
+
+    &:after {
+        content: '';
+        position: absolute;
+        height: 1px;
+        width: 590px;
+        background-color: $violetaOscuro;
+        bottom: 16px;
+        left: calc(50% - 295px);
+    }
+
+    h2 {
+        color: $violetaOscuro;
+        font-size: 3.2rem;
+    }
+}
+
+// home - servicios
+
+.home-servicios {
+    width: 100%;
+    padding: 6rem 0;
+    background-image: url('../media/background/FONDO\ CLARO.png');
+    background-size: cover;
+    background-position: center center;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+
+    .home-servicios-card {
+        text-align: center;
+        max-width: 360px;
+
+        img {
+            width: 100%;
+            height: 240px;
+            object-fit: cover;
+        }
+
+        .home-card__info {
+            margin-top: 2rem;
+            
+            h3 {
+                font-family: $fuenteTextos;
+                font-size: 2rem;
+                color: #723852;
+                text-shadow: $sombreado;
+            }
+
+            p {
+                font-size: 1.4rem;
+                color: #723852;
+                text-shadow: $sombreado;
+            }
+        }
+    }
+}

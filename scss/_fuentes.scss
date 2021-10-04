@@ -1,0 +1,27 @@
+// COLORS 
+$violetaOscuro: #7C3D5A;
+$violetaClaro: #B5838E;
+$rosaOscuro: #ECACB1;
+$rosaPiel: #F8D4B4;
+$rosaClaro: #F7E9DE;
+$negro: #0C0B0C;
+
+// SOMBRA TEXTO
+
+$sombreado: 0px 2px 4px rgba(0, 0, 0, 0.6);
+
+// FUENTES
+
+@font-face {
+    font-family: 'Gotham book';
+    src: url('../fonts/GothamBook.otf');
+}
+
+@font-face {
+    font-family: 'Book Antiqua';
+    src: url('../fonts/BookAntiqua.ttf');
+}
+
+$fuenteTextos: 'Gotham book';
+$fuenteTitulos: 'Book Antiqua'
+

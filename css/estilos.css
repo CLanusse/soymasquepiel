@@ -1,1 +1,280 @@
-*{margin:0;padding:0}
+@font-face {
+    font-family: 'Gotham book';
+    src: url("../fonts/GothamBook.otf");
+  }
+  
+  @font-face {
+    font-family: 'Book Antiqua';
+    src: url("../fonts/BookAntiqua.ttf");
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+  
+  html {
+    font-size: 62.5%;
+  }
+  
+  a, p {
+    font-family: "Gotham book";
+    font-size: 1.6rem;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: none;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: "Book Antiqua";
+  }
+  
+  .footer {
+    background-image: url("../media/background/FONDO OSCURO.png");
+    background-position: center center;
+    background-size: cover;
+    padding: 6rem 5%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  
+  .footer .redes {
+    text-align: center;
+  }
+  
+  .footer .redes img {
+    height: 40px;
+    width: 40px;
+    margin-bottom: 1rem;
+  }
+  
+  .footer .redes p {
+    font-family: "Book Antiqua";
+    font-size: 2rem;
+    color: #F8D4B4;
+    margin: 0;
+  }
+  
+  .header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-top: 1rem;
+    background-color: #613046;
+  }
+  
+  .header h1 {
+    color: #F8D4B4;
+    font-size: 4.4rem;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.6);
+  }
+  
+  .header p {
+    color: #F7E9DE;
+    font-size: 2.6rem;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.6);
+    margin: 0;
+  }
+  
+  .header nav {
+    margin-top: 2rem;
+    width: 100%;
+    background-color: #7C3D5A;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  
+  .header nav a {
+    color: #F7E9DE;
+    padding: 1.2rem 3rem;
+    font-size: 2.2rem;
+  }
+  
+  .home-info {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    max-height: 43.2rem;
+    overflow: hidden;
+    background-image: url("/media/background/FONDO CLARO.png");
+    background-position: center center;
+    background-size: cover;
+  }
+  
+  .home-info .home-texto {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+  }
+  
+  .home-info .home-texto .home-texto__header {
+    text-align: center;
+  }
+  
+  .home-info .home-texto .home-texto__header h2, .home-info .home-texto .home-texto__header p {
+    font-size: 4rem;
+    color: white;
+    text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.6);
+  }
+  
+  .home-info .home-texto .home-texto__header p {
+    font-size: 1.6rem;
+  }
+  
+  .home-info .home-texto .home-texto__lista li {
+    font-family: "Gotham book";
+    color: white;
+    font-size: 2.6rem;
+    text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.6);
+    list-style: none;
+    position: relative;
+  }
+  
+  .home-info .home-texto .home-texto__lista li::before {
+    content: '';
+    width: 10px;
+    height: 10px;
+    background-color: white;
+    -webkit-box-shadow: 2px 2px 4px 0 rgba(0, 0, 0, 0.6);
+            box-shadow: 2px 2px 4px 0 rgba(0, 0, 0, 0.6);
+    position: absolute;
+    top: calc(50% - 5px);
+    left: -20px;
+    -webkit-transform: rotateZ(45deg);
+            transform: rotateZ(45deg);
+  }
+  
+  .home-info .home-info-img img:first-of-type {
+    margin-right: -3px;
+  }
+  
+  .home-info .home-info-img img:last-of-type {
+    margin-top: -2px;
+  }
+  
+  .frase {
+    text-align: center;
+    padding: 4rem 3rem;
+    background-image: url("../media/background/FONDO BLANCO.png");
+    background-position: center center;
+    background-size: cover;
+    position: relative;
+  }
+  
+  .frase:before {
+    content: '';
+    position: absolute;
+    height: 1px;
+    width: 590px;
+    background-color: #7C3D5A;
+    top: 16px;
+    left: calc(50% - 295px);
+  }
+  
+  .frase:after {
+    content: '';
+    position: absolute;
+    height: 1px;
+    width: 590px;
+    background-color: #7C3D5A;
+    bottom: 16px;
+    left: calc(50% - 295px);
+  }
+  
+  .frase h2 {
+    color: #7C3D5A;
+    font-size: 3.2rem;
+  }
+  
+  .home-servicios {
+    width: 100%;
+    padding: 6rem 0;
+    background-image: url("../media/background/FONDO CLARO.png");
+    background-size: cover;
+    background-position: center center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  
+  .home-servicios .home-servicios-card {
+    text-align: center;
+    max-width: 360px;
+  }
+  
+  .home-servicios .home-servicios-card img {
+    width: 100%;
+    height: 240px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  
+  .home-servicios .home-servicios-card .home-card__info {
+    margin-top: 2rem;
+  }
+  
+  .home-servicios .home-servicios-card .home-card__info h3 {
+    font-family: "Gotham book";
+    font-size: 2rem;
+    color: #723852;
+    text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.6);
+  }
+  
+  .home-servicios .home-servicios-card .home-card__info p {
+    font-size: 1.4rem;
+    color: #723852;
+    text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.6);
+  }
+  /*# sourceMappingURL=estilos.css.map */
