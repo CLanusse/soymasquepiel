@@ -1,0 +1,36 @@
+.banner	{
+	img {
+		width: 100%;
+	}
+}
+
+.section-info {
+    width: 100%;    
+    display: flex;
+    justify-content: space-between;
+    max-height: 100%;  
+    background-image: url('../media/background/FONDO\ CLARO.png');
+    background-position: center center;
+    background-size: cover;
+}
+
+.centro-info {
+	margin-top: 40px;
+	margin-bottom: 40px;
+
+	h2 {
+		
+		font-size: 4rem;
+		color: $rosaClaro;
+		text-shadow: $sombreado;
+
+	}
+		p {
+			font-family: $fuenteTextos;
+			font-size: 2.7rem;
+			color: $rosaClaro;
+			text-shadow: $sombreado;
+		}
+}
+
+
